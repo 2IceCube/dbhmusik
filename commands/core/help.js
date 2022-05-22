@@ -14,7 +14,7 @@ module.exports = {
 
         const commands = client.commands.filter(x => x.showHelp !== false);
 
-        embed.setDescription('Support gibt es bei DisBoHost! [Discord Server](https://discord.disbohost.de). Öffne einfach ein Ticket?');
+        embed.setDescription('Support gibt es bei DisBoHost! [Discord Server](https://discord.disbohost.de). Öffne einfach ein Ticket!');
         embed.addField(`Enabled - ${commands.size}`, commands.map(x => `\`${x.name}${x.aliases[0] ? ` (${x.aliases.map(y => y).join(', ')})\`` : '\`'}`).join(' | '));
 
         embed.setTimestamp();
